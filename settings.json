@@ -1,4 +1,4 @@
-{  
+{
   "editor.fontFamily": "'Fira Code', Menlo, 'Courier New', monospace",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.cursorSmoothCaretAnimation": true,
@@ -9,7 +9,7 @@
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.fontSize": 13.5,
+  "editor.fontSize": 14,
   "editor.suggestSelection": "first",
   "editor.suggest.showStatusBar": true,
   "editor.semanticHighlighting.enabled": false,
@@ -18,7 +18,7 @@
   "editor.linkedEditing": true,
   "editor.defaultFormatter": "ms-vscode.cpptools",
   "eslint.format.enable": true,
-
+  /* THEME CUSTOMIZATION */
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
@@ -43,19 +43,18 @@
     "tab.activeBackground": "#111518",
     "tab.activeBorder": "#111518",
   },
-
+  /* WINDOW */
   "window.dialogStyle": "custom",
   "window.nativeTabs": true,
   "window.titleBarStyle": "custom",
-  "window.commandCenter":true,
-
+  "window.commandCenter": true,
   "breadcrumbs.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
-
+  /* FOLDER HIERARCHY */
   "explorer.openEditors.sortOrder": "alphabetical",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-
+  /* TERMINAL CONFIG */
   "terminal.external.osxExec": "iTerm.app",
   "terminal.external.linuxExec": "iTerm.app",
   "terminal.integrated.cursorStyle": "line",
@@ -68,27 +67,23 @@
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.scrollback": 2000,
   "terminal.integrated.macOptionIsMeta": true,
-
   "debug.showInStatusBar": "never",
   "debug.terminal.clearBeforeReusing": true,
-
+  /* ERRORLENS_EXTENSION */
   "errorLens.gutterIconsEnabled": true,
   "errorLens.statusBarMessageEnabled": false,
   "errorLens.statusBarColorsEnabled": false,
-
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
-  
+  /* C_CPP_EXTENSION */
   "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
   "C_Cpp.intelliSenseUpdateDelay": 500,
   "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
-  "C_Cpp.clang_format_path": "/usr/bin/clang++",
-  "C_Cpp.experimentalFeatures": "Enabled",
-  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
   "C_Cpp.default.cppStandard": "c++20",
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
-
-
+  "C_Cpp.clang_format_path": "/opt/homebrew/opt/llvm/bin/clang-format",
+  "C_Cpp.experimentalFeatures": "Enabled",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4 }",
   "cmake.statusbar.advanced": {
     "debug": {
       "visibility": "icon"
@@ -102,15 +97,13 @@
   "[cmake]": {
     "editor.defaultFormatter": "josetr.cmake-language-support-vscode"
   },
-
+  /* ICONS */
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.color": "#7cb342",
   "material-icon-theme.opacity": 1,
   "material-icon-theme.saturation": 1,
   "material-icon-theme.hidesExplorerArrows": false,
   "material-icon-theme.showUpdateMessage": false,
-
-
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
@@ -124,12 +117,14 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
     "plaintext": true,
     "markdown": false,
     "cpp": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
 }
