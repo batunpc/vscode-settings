@@ -110,7 +110,10 @@
   "files.simpleDialog.enable": true,
   "files.associations": {
     "*.cpp": "cpp",
-    "*.ng.html": "html"
+    "*.ng.html": "html",
+    "*.in": "cpp",
+    "string_view": "cpp",
+    "int32_t": "cpp",
   },
   "files.exclude": {
     "**/.classpath": true,
@@ -122,11 +125,20 @@
     "*": true,
     "yaml": false,
     "plaintext": true,
-    "markdown": false,
-    "cpp": false,
-    "cmake": false
+    "markdown": true,
+    "cpp": true,
+    "cmake": true
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "tabnine.experimentalAutoImports": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.terminal.executeInFileDir": true,
 }
